@@ -15,26 +15,16 @@ A lightweight, automated system tray indicator for Linux (GNOME/GTK) that silent
 - **Secure Configuration:** Prompts you for your phone number once on startup and saves it (along with your refresh interval preference) securely in a local JSON config file (`~/.yemen4g_config`).
 - **Notifications:** View your full balance and expiration date instantly as a native desktop notification.
 
-## Prerequisites 🛠️
-This app is designed for GNOME-based Linux distributions (like Ubuntu, Zorin OS, Pop!_OS, Debian, etc).
-
-Install the required Python and GTK dependencies by running this command in your terminal:
-```bash
-sudo apt update && sudo apt install -y python3-gi python3-gi-cairo gir1.2-gtk-3.0 gir1.2-ayatanaappindicator3-0.1 gir1.2-notify-0.7 python3-requests python3-bs4
-```
-*(If your system uses older AppIndicators, `gir1.2-appindicator3-0.1` will work as a fallback automatically).*
-
 ## Usage 🚀
-1. Clone this repository or download the `yemen4g_github.py` file.
-2. Make it executable:
+The easiest way to install dependencies and run the indicator is to use the provided `install.sh` script:
+
+1. Clone this repository or download all files.
+2. Open your terminal in the downloaded folder and run:
    ```bash
-   chmod +x yemen4g_github.py
+   chmod +x install.sh
+   ./install.sh
    ```
-3. Run the script:
-   ```bash
-   python3 yemen4g_github.py
-   ```
-4. **On the first launch**, a dialog will ask you for your Yemen 4G phone number. Enter it and click OK.
+3. **On the first launch**, a dialog will ask you for your Yemen 4G phone number. Enter it and click OK.
 5. The indicator will appear in your top bar showing `4G: Fetching...` and will automatically solve the Altcha challenge to retrieve your balance.
 6. Right-click the indicator to access the menu where you can:
    - Change your refresh interval.
