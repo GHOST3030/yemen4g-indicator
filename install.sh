@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "=========================================="
-echo "  Yemen 4G Indicator Setup & Launcher     "
+echo "  Yemen 4G Indicator Setup & Launcher  Built by: @GHOST3030" "
 echo "=========================================="
 echo ""
 echo "Installing required dependencies..."
